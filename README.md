@@ -2,9 +2,7 @@
  TextField with bottom indicator written with Swift
 
 <p align="center">
-10
     <img src="./Screenshots/Showcase.gif">
-11
 </p>
 
 ## Features
