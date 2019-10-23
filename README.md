@@ -1,9 +1,9 @@
 # HSIndicatorTextfield
  TextField with bottom indicator written with Swift
 
-<p align="center">
-    <img src="./Screenshots/Showcase.gif">
-</p>
+
+![alt tag](https://github.com/hasansedaghat/HSIndicatorTextfield.git/ScreenShots/Showcase.gif)
+
 
 ## Features
 - Bottom indicator pattern
