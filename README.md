@@ -2,7 +2,7 @@
  TextField with bottom indicator written with Swift
 
 
-![alt tag](https://github.com/hasansedaghat/HSIndicatorTextfield.git/ScreenShots/Showcase.gif)
+![alt tag](https://github.com/hasansedaghat/HSIndicatorTextfield.git/Showcase.gif)
 
 
 ## Features
