@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HSTextFieldExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q4k-MD-tn2" customClass="HSIndicatorTextfield" customModule="HSTextFieldExample" customModuleProvider="target">
+                                <rect key="frame" x="72" y="144" width="270" height="35"/>
+                                <color key="tintColor" red="0.20000000000000001" green="0.66274509803921566" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="HEu-UQ-VZx"/>
+                                    <constraint firstAttribute="width" constant="270" id="NIu-Lv-Q4R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="indicatorHeight">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="FirstName"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XW9-26-Kdv" customClass="HSTextfield" customModule="HSTextFieldExample" customModuleProvider="target">
+                                <rect key="frame" x="72" y="219" width="270" height="35"/>
+                                <color key="tintColor" red="0.20000000000000001" green="0.66274509803921566" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="indicatorHeight">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="LastName"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uuD-qQ-CUM" customClass="HSTextfield" customModule="HSTextFieldExample" customModuleProvider="target">
+                                <rect key="frame" x="72" y="294" width="270" height="35"/>
+                                <color key="tintColor" red="0.20000000000000001" green="0.66274509803921566" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="indicatorHeight">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="PhoneNumber"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8721880410121613" green="0.87592191644564954" blue="0.88712354274611394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="uuD-qQ-CUM" firstAttribute="height" secondItem="XW9-26-Kdv" secondAttribute="height" id="2gM-IA-8Cj"/>
+                            <constraint firstItem="Q4k-MD-tn2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="7yQ-H7-FUf"/>
+                            <constraint firstItem="XW9-26-Kdv" firstAttribute="centerX" secondItem="Q4k-MD-tn2" secondAttribute="centerX" id="8We-y3-7Sb"/>
+                            <constraint firstItem="uuD-qQ-CUM" firstAttribute="width" secondItem="XW9-26-Kdv" secondAttribute="width" id="FER-ft-oGC"/>
+                            <constraint firstItem="uuD-qQ-CUM" firstAttribute="top" secondItem="XW9-26-Kdv" secondAttribute="bottom" constant="40" id="KMB-RI-636"/>
+                            <constraint firstItem="Q4k-MD-tn2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bXf-EG-YSx"/>
+                            <constraint firstItem="XW9-26-Kdv" firstAttribute="top" secondItem="Q4k-MD-tn2" secondAttribute="bottom" constant="40" id="c84-wn-AZm"/>
+                            <constraint firstItem="XW9-26-Kdv" firstAttribute="height" secondItem="Q4k-MD-tn2" secondAttribute="height" id="dZC-JP-0oV"/>
+                            <constraint firstItem="uuD-qQ-CUM" firstAttribute="centerX" secondItem="XW9-26-Kdv" secondAttribute="centerX" id="kBE-iI-UQO"/>
+                            <constraint firstItem="XW9-26-Kdv" firstAttribute="width" secondItem="Q4k-MD-tn2" secondAttribute="width" id="z5c-o2-oXj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="8eB-aR-ze7" appends="YES" id="wyu-Mv-KbP"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="8eB-aR-ze7">
+                    <connections>
+                        <action selector="tapToDismiss:" destination="BYZ-38-t0r" id="QZZ-M1-dAL"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="139" y="139"/>
+        </scene>
+    </scenes>
+</document>
