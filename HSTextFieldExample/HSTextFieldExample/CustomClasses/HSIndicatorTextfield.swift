@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class HSIndicatorTextfield: UITextField {
     
     @IBInspectable var indicatorHeight : CGFloat  {
@@ -31,7 +30,6 @@ class HSIndicatorTextfield: UITextField {
     
     @IBInspectable var selectedIndicatorFirstColor : UIColor = .clear
     @IBInspectable var selectedIndicatorSecondColor : UIColor = .clear
-    @IBInspectable var placeholderText : String = ""
     @IBInspectable var placeholderTextColor : UIColor = .clear
     @IBInspectable var placeholderFontSize : CGFloat = 15
     @IBInspectable var unselectedTextColor : UIColor = .white
@@ -46,7 +44,7 @@ class HSIndicatorTextfield: UITextField {
         IndicatorView.frame.origin = CGPoint(x: 0, y: self.frame.size.height - self.IndicatorView.frame.size.height)
         IndicatorView.backgroundColor = indicatorColor
         let placeholderFont = UIFont(name: self.font!.fontName, size: placeholderFontSize) ?? UIFont.systemFont(ofSize: placeholderFontSize)
-        self.attributedPlaceholder = NSAttributedString(string: placeholderText, attributes: [NSAttributedString.Key.foregroundColor : placeholderTextColor,NSAttributedString.Key.font: placeholderFont])
+        self.attributedPlaceholder = NSAttributedString(string: self.placeholder ?? "", attributes: [NSAttributedString.Key.foregroundColor : placeholderTextColor,NSAttributedString.Key.font: placeholderFont])
         selectedColor = self.textColor! 
         self.addTarget(self, action: #selector(textFieldDidBeginEditing(_:)), for: .editingDidBegin)
         self.addTarget(self, action: #selector(textFieldDidEndEditing(_:)), for: .editingDidEnd)
@@ -54,6 +52,12 @@ class HSIndicatorTextfield: UITextField {
         self.assignSelectedColor()
         self.addSubview(IndicatorView)
     
+    }
+    
+    override func caretRect(for position: UITextPosition) -> CGRect {
+        var rect = super.caretRect(for: position)
+        rect.size.height = rect.size.height - 5
+        return rect
     }
     
     private func assignSelectedColor() {
